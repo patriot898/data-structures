@@ -27,6 +27,3 @@ var Stack = function() {
 };
 
 
-var myStack = Stack;
-myStack.push('a');
-console.log(JSON.Stringify(myStack));
