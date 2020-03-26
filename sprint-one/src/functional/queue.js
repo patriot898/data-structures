@@ -13,7 +13,7 @@ var Queue = function() {
   someInstance.dequeue = function() {
     var dequeued = storage[0];
     for(var key in storage) {
-      storage[key] = storage[(parseInt(key) + 1).toString()];
+      storage[key] = storage[(parseInt(key) + 1)];
     }
     //delete last key afterwards
     delete storage[someInstance.size() - 1];
