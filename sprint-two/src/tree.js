@@ -23,21 +23,21 @@ treeMethods.contains = function(target) {
 	//if not, check if it has any children
 	//if so, iterate through those children and conduct contains on them
 	//return false after all iterations are complete
-	
-	
+
+
 	var isFound = false;
 
 	if(this.value === target) {
 		isFound = true;
 	}
-	if(this.children.length) {
+	else if(this.children.length) {
 		for(var i = 0; i < this.children.length; i++) {
 			isFound = isFound || this.children[i].contains(target);		}
 	};
 
 	return isFound;
 
-	
+
 };
 
 
